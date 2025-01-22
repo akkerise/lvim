@@ -17,8 +17,8 @@ return {
       ["<C-h>"] = "<Left>",
       ["<C-j>"] = "<Down>",
       ["<C-k>"] = "<Up>",
-      ["jj"] = "<Esc>"
-    }
+      ["jj"] = "<Esc>",
+    },
   },
   reload_config_on_save = true,
   format_on_save = true,
@@ -80,23 +80,6 @@ return {
       auto_install = true,
     },
   },
-  keys = {
-    normal_mode = {
-      ["<F2>"] = ":set spell!<CR>", -- toggle spell check
-      ["<F4>"] = ":set spelllang=en<CR>",
-      ["<F3>"] = ":set spelllang=pt_br<CR>",
-      ["<C-s>"] = ":w<cr>",
-      ["<S-l>"] = ":BufferLineCycleNext<CR>",
-      ["<S-h>"] = ":BufferLineCyclePrev<CR>",
-    },
-    insert_mode = {
-      ["<C-l>"] = "<Right>",
-      ["<C-h>"] = "<Left>",
-      ["<C-j>"] = "<Down>",
-      ["<C-k>"] = "<Up>",
-      ["jj"] = "<Esc>",
-    },
-  }
 }
 
 -- lvim.builtin.telescope.defaults.initial_mode = "insert" lvim.builtin.telescope.defaults.layout_config.horizontal.mirror = false
