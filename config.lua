@@ -9,13 +9,33 @@ lvim.reload_config_on_save = init.reload_config_on_save
 vim.opt.incsearch = true
 vim.opt.shiftwidth = 2
 
--- lvim.builtin.telescope.defaults.initial_mode = "insert"
+
+lvim.builtin.telescope.active = true
+lvim.builtin.telescope.defaults.initial_mode = "insert"
+lvim.builtin.telescope.defaults.layout_config.preview_cutoff = 120
+lvim.builtin.telescope.defaults.layout_config.prompt_position = "bottom"
+lvim.builtin.telescope.defaults.layout_config.width = 0.75
+lvim.builtin.telescope.defaults.layout_strategy = "horizontal"
 -- lvim.builtin.telescope.defaults.layout_config.horizontal.mirror = false
--- lvim.builtin.telescope.defaults.layout_config.preview_cutoff = 120
--- lvim.builtin.telescope.defaults.layout_config.prompt_position = "bottom"
 -- lvim.builtin.telescope.defaults.layout_config.vertical.mirror = false
--- lvim.builtin.telescope.defaults.layout_config.width = 0.75
--- lvim.builtin.telescope.defaults.layout_strategy = "horizontal"
+-- local actions = require("telescope.actions")
+-- require("telescope").setup({
+--   defaults = {
+--     mappings = {
+--       i = {
+--         -- Di chuyển xuống
+--         ["<C-j>"] = actions.move_selection_next,
+--         -- Di chuyển lên
+--         ["<C-k>"] = actions.move_selection_previous,
+--       },
+--       -- Bạn cũng có thể thêm map ở chế độ normal (n) nếu muốn
+--       n = {
+--         ["<C-j>"] = actions.move_selection_next,
+--         ["<C-k>"] = actions.move_selection_previous,
+--       },
+--     },
+--   },
+-- })
 
 -- PLUGINS
 lvim.plugins = require('user.plugins')
