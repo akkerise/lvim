@@ -1,18 +1,18 @@
 -- Setup for LunarVim
-lvim.colorscheme = "onedark"
+-- lvim.colorscheme = "onedark"
 
--- Install plugin theme OneDark (If not have)
-lvim.plugins = {
-  {
-    "navarasu/onedark.nvim",
-    config = function()
-      require("onedark").setup {
-        style = "deep", -- Chọn phong cách: 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer'
-      }
-      require("onedark").load()
-    end,
-  },
-}
+-- -- Install plugin theme OneDark (If not have)
+-- lvim.plugins = {
+--   {
+--     "navarasu/onedark.nvim",
+--     config = function()
+--       require("onedark").setup {
+--         style = "deep", -- Chọn phong cách: 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer'
+--       }
+--       require("onedark").load()
+--     end,
+--   },
+-- }
 -- require('onedark').setup {
 --   -- Main options --
 --   style = 'dark',               -- Default theme style. Choose between 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
