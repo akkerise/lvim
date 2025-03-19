@@ -42,11 +42,11 @@ vim.opt.guifont = "monospace:h17" -- the font used in graphical neovim applicati
 vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 2 -- insert 2 spaces for a tab
 vim.opt.relativenumber = true -- relative line numbers
-vim.opt.wrap = true -- wrap lines
+-- vim.opt.wrap = true -- wrap lines
 vim.opt.incsearch = true
 -- vim.opt.foldmethod = "manual" -- folding set to "expr" for treesitter based folding
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 lvim.builtin.telescope.active = true
 lvim.builtin.telescope.defaults.initial_mode = "insert"
