@@ -4,6 +4,13 @@ return {
     level = 'warn'
   },
   keys = {
+    insert_mode = {
+      ["<C-l>"] = "<Right>",
+      ["<C-h>"] = "<Left>",
+      ["<C-j>"] = "<Down>",
+      ["<C-k>"] = "<Up>",
+      ["jj"] = "<Esc>",
+    },
     normal_mode = {
       ["<F2>"] = ":set spell!<CR>", -- toggle spell check
       ["<F4>"] = ":set spelllang=en<CR>",
@@ -11,13 +18,6 @@ return {
       ["<C-s>"] = ":w<cr>",
       ["<S-l>"] = ":BufferLineCycleNext<CR>",
       ["<S-h>"] = ":BufferLineCyclePrev<CR>",
-    },
-    insert_mode = {
-      ["<C-l>"] = "<Right>",
-      ["<C-h>"] = "<Left>",
-      ["<C-j>"] = "<Down>",
-      ["<C-k>"] = "<Up>",
-      ["jj"] = "<Esc>",
     },
   },
   reload_config_on_save = true,

@@ -5,6 +5,8 @@ lvim.colorscheme = init.colorscheme
 -- lvim.format_on_save = init.format_on_save
 lvim.log.level = init.log.level
 lvim.reload_config_on_save = init.reload_config_on_save
+lvim.keys.insert_mode["jj"] = "<Esc>"
+
 
 vim.opt.backup = true -- creates a backup file
 vim.opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard

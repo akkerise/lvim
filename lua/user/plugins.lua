@@ -3,10 +3,14 @@ return {
     "navarasu/onedark.nvim",
     config = function()
       require("onedark").setup {
-        style = "light", -- Styles: 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer'
+        style = "dark", -- Styles: 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'
       }
       require("onedark").load()
     end,
+  },
+   {
+    "nvim-tree/nvim-web-devicons",
+    lazy = true,
   },
   -- {
   --   "Exafunction/codeium.nvim",
